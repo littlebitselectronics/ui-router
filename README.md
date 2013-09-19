@@ -26,10 +26,17 @@ to change. Using it in a project that requires guaranteed stability is not recom
 
 ## Get Started
 
-**(1)** Get UI-Router in one of 3 ways:
+**(1)** Get UI-Router in one of 4 ways:
  - clone & [build](#developing) this repository
  - [download the release](http://angular-ui.github.io/ui-router/release/angular-ui-router.js) (or [minified](http://angular-ui.github.io/ui-router/release/angular-ui-router.min.js))
- - or via **[Bower](http://bower.io/)**: by running `$ bower install angular-ui-router` from your console
+ - via **[Bower](http://bower.io/)**: by running `$ bower install angular-ui-router` from your console
+ - or via **[Component](https://github.com/component/component)**: by running `$ component install angular-ui-router` from your console
+
+##### With Component:
+
+**(2)** Add `require('angular-ui-router')` to your main module's list of dependencies
+
+##### With anything else:
 
 **(2)** Include `angular-ui-router.js` (or `angular-ui-router.min.js`) in your `index.html`, after including Angular itself
 
