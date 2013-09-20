@@ -27,7 +27,7 @@ to change. Using it in a project that requires guaranteed stability is not recom
 ## Get Started
 
 ##### Using [Component](https://github.com/component/component)
-1. `$ component install angular-ui-router` from your console
+1. `$ component install angular-ui/ui-router` from your console
 
 2. Add `require('angular-ui-router')` to your main module's list of dependencies (the package exports the angular module name).
 
