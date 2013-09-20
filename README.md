@@ -26,41 +26,42 @@ to change. Using it in a project that requires guaranteed stability is not recom
 
 ## Get Started
 
-**(1)** Get UI-Router in one of 4 ways:
- - clone & [build](#developing) this repository
- - [download the release](http://angular-ui.github.io/ui-router/release/angular-ui-router.js) (or [minified](http://angular-ui.github.io/ui-router/release/angular-ui-router.min.js))
- - via **[Bower](http://bower.io/)**: by running `$ bower install angular-ui-router` from your console
- - or via **[Component](https://github.com/component/component)**: by running `$ component install angular-ui-router` from your console
+##### Using [Component](https://github.com/component/component)
+1. `$ component install angular-ui-router` from your console
 
-##### With Component:
+2. Add `require('angular-ui-router')` to your main module's list of dependencies (the package exports the angular module name).
 
-**(2)** Add `require('angular-ui-router')` to your main module's list of dependencies
 
-##### With anything else:
+##### Using Bower or other
 
-**(2)** Include `angular-ui-router.js` (or `angular-ui-router.min.js`) in your `index.html`, after including Angular itself
+1. Get UI-Router in one of 3 ways:
+  - clone & [build](#developing) this repository
+  - [download the release](http://angular-ui.github.io/ui-router/release/angular-ui-router.js) (or [minified](http://angular-ui.github.io/ui-router/release/angular-ui-router.min.js))
+  - or via **[Bower](http://bower.io/)**: by running `$ bower install angular-ui-router` from your console
 
-**(3)** Add `'ui.router'` to your main module's list of dependencies
 
-When you're done, your setup should look similar to the following:
+2. Include `angular-ui-router.js` (or `angular-ui-router.min.js`) in your `index.html`, after including Angular itself
 
->
-```html
-<!doctype html>
-<html ng-app="myApp">
-<head>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
-    <script src="js/angular-ui-router.min.js"></script>
-    <script>
-        var myApp = angular.module('myApp', ['ui.router']);
-    </script>
-    ...
-</head>
-<body>
-    ...
-</body>
-</html>
-```
+3. Add `'ui.router'` to your main module's list of dependencies
+
+  When you're done, your setup should look similar to the following:
+  >
+  ```html
+  <!doctype html>
+  <html ng-app="myApp">
+  <head>
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+      <script src="js/angular-ui-router.min.js"></script>
+      <script>
+          var myApp = angular.module('myApp', ['ui.router']);
+      </script>
+      ...
+  </head>
+  <body>
+      ...
+  </body>
+  </html>
+  ```
 
 ### Nested States & Views
 
